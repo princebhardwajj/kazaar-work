@@ -122,7 +122,7 @@
                         <tr>
                             <td width="100%"
                                 style="vertical-align: top; justify-content: center; border: 1px solid #D5D5D5">
-                                <p style="font-size: 9px">Testwrite checking How many character are fitting in this BOX.
+                                <p>Testwrite checking How many character are fitting in this BOX.
                                     I need this p ackaigng within the fastest possible way..... please majke sure its
                                     bla bla bla. Testwrite checking How many character are fitting in this BOX. I need
                                     this p ackaigng within the fastest possible way..... please majke sure its bla bla
@@ -159,28 +159,30 @@
                 </div>
                 <div style="section">
                     <table width="100%">
-                        <tr>
-                            <td style="vertical-align: top; width: 20%; font-size: 6px">
+                        <tr style="margin: 0px 100px">
+                            <td style="vertical-align: top; width: 9%; text-align: center; font-size: 11px;"></td>
+                            <td style="vertical-align: top; width: 27%; text-align: center; font-size: 11px;">
                                 <div style="text-align: center">
                                     <img src="https://cdn.shopify.com/s/files/1/0825/2224/3394/files/qr-code-kazaar-slip.png?v=1753871823" alt="qrcode" width="50" />
                                 </div>
-                                <p style="text-align: center"><strong>200€ Gewinnen!</strong></p>
+                                <p ><strong>200€ Gewinnen!</strong></p>
                                 <p>Lasse eine Bewertung da & gewinne 200€. Jede Woche wird ausgelost.</p>
                             </td>
-                            <td style="vertical-align: top; width: 20%; font-size: 6px">
+                            <td style="vertical-align: top; width: 27%; text-align: center; font-size: 11px;">
                                 <div style="text-align: center">
                                     <img src="https://cdn.shopify.com/s/files/1/0825/2224/3394/files/qr-code-kazaar-slip.png?v=1753871823" alt="qrcode" width="50" />
                                 </div>
-                                <p style="text-align: center"><strong>Exclusiver Whatsapp Club</strong></p>
+                                <p ><strong>Exclusiver Whatsapp Club</strong></p>
                                 <p>Kostenloser exklusiver Zugang. Insights vor allen anderen. Nur in unserem Kanal.</p>
                             </td>
-                            <td style="vertical-align: top; width: 20%; font-size: 6px">
+                            <td style="vertical-align: top; width: 27%;text-align: center; font-size: 11px;">
                                 <div style="text-align: center">
                                     <img src="https://cdn.shopify.com/s/files/1/0825/2224/3394/files/qr-code-kazaar-slip.png?v=1753871823" alt="qrcode" width="50" />
                                 </div>
-                                <p style="text-align: center"><strong>Kundensupport</strong></p>
+                                <p><strong>Kundensupport</strong></p>
                                 <p>Hast du ein Problem bei deiner Bestellung? Keine Panik, unser Support ist da.</p>
                             </td>
+                            <td style="vertical-align: top; width: 9%; text-align: center; font-size: 11px;"></td>
                         </tr>
                     </table>
                 </div>
@@ -209,21 +211,23 @@
                                     Deutschland
                                 </p>
                             </td>
-                            <td width="30%" style="vertical-align: top; justify-content: center">
-                                <p><strong>RECHNUNG AN</strong></p>
-                                <p>
-                                    Treede Janine<br>
-                                    Bahnhofstraße 3<br>
-                                    24960 Glücksburg<br>
-                                    Deutschland
-                                </p>
+                            <td width="30%" style="vertical-align: top; text-align: right">
+                                <div style="text-align: left;">
+                                    <p><strong>RECHNUNG AN</strong></p>
+                                    <p>
+                                        Treede Janine<br>
+                                        Bahnhofstraße 3<br>
+                                        24960 Glücksburg<br>
+                                        Deutschland
+                                    </p>
+                                </div>
                             </td>
                         </tr>
                     </table>
                 </div>
 
-                <div class="section">
-                    <img src="https://placehold.co/377X566?text=HEPHAISTOS" alt="slip sticker2" width="377" height="566" />
+                <div class="section" style="text-align: right">
+                    <img src="https://placehold.co/377X566?text=HEPHAISTOS" alt="slip sticker2" style="width: 10cm; height: 15cm" />
                 </div>
             </td>
         </tr>
