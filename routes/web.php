@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/view-pdf', function () {
+    return view('view-pdf');
+});
+
+Route::get('/invoice', [Controller::class, 'generatePdf'])->name('invoice');
+
