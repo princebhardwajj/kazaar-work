@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title>Packing Slip</title>
     <style>
+             @page {
+                 margin: 0px;
+            }
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
@@ -63,6 +66,9 @@
         .page-break {
             page-break-after: always;
         }
+        .page-break-inside-avoid{
+            page-break-inside: avoid;
+        }
     </style>
 </head>
 
@@ -72,166 +78,265 @@
             'saleOrderProducts' => [
                 [
                     'product' => [
-                        'image' => 'https://placehold.co/50?text=ANTINOOS',
+                        'image' => 'https://cdn.shopify.com/s/files/1/0252/2723/1283/files/hephaistos-50-391897.jpg?v=1750125018',
                         'product_name' => 'ANTINOOS 50ml',
                     ],
                     'varient' => [
-                        'title' => '20%',
+                        'title' => '50ml / 20%',
                     ],
                     'quantity' => 1,
                 ],
                 [
                     'product' => [
-                        'image' => 'https://placehold.co/50?text=POSEIDON',
+                        'image' => 'https://cdn.shopify.com/s/files/1/0252/2723/1283/files/hephaistos-50-391897.jpg?v=1750125018',
                         'product_name' => 'POSEIDON 30ml',
                     ],
                     'varient' => [
-                        'title' => '30%',
+                        'title' => '50ml / 20%',
                     ],
                     'quantity' => 2,
                 ],
                 [
                     'product' => [
-                        'image' => 'https://placehold.co/50?text=HEPHAISTOS',
+                        'image' => 'https://cdn.shopify.com/s/files/1/0252/2723/1283/files/hephaistos-50-391897.jpg?v=1750125018',
                         'product_name' => 'HEPHAISTOS 50ml',
                     ],
                     'varient' => [
-                        'title' => '50%',
+                        'title' => '50ml / 20%',
                     ],
                     'quantity' => 3,
                 ],
                 [
                     'product' => [
-                        'image' => 'https://placehold.co/50?text=HEPHAISTOS',
+                        'image' => 'https://cdn.shopify.com/s/files/1/0252/2723/1283/files/hephaistos-50-391897.jpg?v=1750125018',
                         'product_name' => 'HEPHAISTOS 50ml',
                     ],
                     'varient' => [
-                        'title' => '50%',
+                        'title' => '50ml / 20%',
+                    ],
+                    'quantity' => 3,
+                ],
+                [
+                    'product' => [
+                        'image' => 'https://cdn.shopify.com/s/files/1/0252/2723/1283/files/hephaistos-50-391897.jpg?v=1750125018',
+                        'product_name' => 'HEPHAISTOS 50ml',
+                    ],
+                    'varient' => [
+                        'title' => '50ml / 20%',
+                    ],
+                    'quantity' => 3,
+                ],
+                [
+                    'product' => [
+                        'image' => 'https://cdn.shopify.com/s/files/1/0252/2723/1283/files/hephaistos-50-391897.jpg?v=1750125018',
+                        'product_name' => 'HEPHAISTOS 50ml',
+                    ],
+                    'varient' => [
+                        'title' => '50ml / 20%',
+                    ],
+                    'quantity' => 3,
+                ],
+                [
+                    'product' => [
+                        'image' => 'https://cdn.shopify.com/s/files/1/0252/2723/1283/files/hephaistos-50-391897.jpg?v=1750125018',
+                        'product_name' => 'HEPHAISTOS 50ml',
+                    ],
+                    'varient' => [
+                        'title' => '50ml / 20%',
+                    ],
+                    'quantity' => 3,
+                ],
+                [
+                    'product' => [
+                        'image' => 'https://cdn.shopify.com/s/files/1/0252/2723/1283/files/hephaistos-50-391897.jpg?v=1750125018',
+                        'product_name' => '5ER bundle',
+                    ],
+                    'varient' => [
+                        'title' => 'ajax, antinoos, achilles, poseidon, hephaistos',
+                    ],
+                    'quantity' => 3,
+                ],
+                [
+                    'product' => [
+                        'image' => 'https://cdn.shopify.com/s/files/1/0252/2723/1283/files/hephaistos-50-391897.jpg?v=1750125018',
+                        'product_name' => '5ER bundle',
+                    ],
+                    'varient' => [
+                        'title' => 'ajax, antinoos, achilles, poseidon, hephaistos',
+                    ],
+                    'quantity' => 3,
+                ],
+                [
+                    'product' => [
+                        'image' => 'https://cdn.shopify.com/s/files/1/0252/2723/1283/files/hephaistos-50-391897.jpg?v=1750125018',
+                        'product_name' => '5ER bundle',
+                    ],
+                    'varient' => [
+                        'title' => 'ajax, antinoos, achilles, poseidon, hephaistos',
                     ],
                     'quantity' => 3,
                 ],
             ],
         ];
-
+        $items = $order['saleOrderProducts'];
+        $chunks = array_chunk($items, 4);
     @endphp
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 50%; padding-right: 20px; vertical-align: top;">
-                <div class="section">
-                    <table width="100%">
-                        <tr>
-                            <td width="100%"
-                                style="vertical-align: top; justify-content: center; border: 1px solid #D5D5D5">
-                                <p>Testwrite checking How many character are fitting in this BOX.
-                                    I need this p ackaigng within the fastest possible way..... please majke sure its
-                                    bla bla bla. Testwrite checking How many character are fitting in this BOX. I need
-                                    this p ackaigng within the fastest possible way..... please majke sure its bla bla
-                                    bla.Testwrite checking How many character are fitting in this BOX. I need this p
-                                    ackaigng within the fastest possible way..... please majke sure its bla bla bla.</p>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="section">
-                    <table class="item-list">
-                        <tr>
-                            <td></td>
-                            <td class="bold">ARTIKEL</td>
-                            <td class="bold">MENGE</td>
-                        </tr>
-                        @forelse ($order['saleOrderProducts'] as $item)
-                            <tr>
-                                <td><img src={{ $item['product']['image'] . '&width=50' ?? '' }} width="50px"
-                                        alt="{{ $item['name'] ?? '' }}"></td>
-                                <td> {{ $item['product']['product_name'] ?? '--' }} -
-                                    {{ $item['varient']['title'] ?? '--' }}
-                                </td>
-                                <td>{{ $item['quantity'] ?? '--' }}</td>
-                            </tr>
-                        @empty
-                            <tr>
-                                <td colspan="2" class="text-center pd">
-                                    <h6>No Product Found !</h6>
-                                </td>
-                            </tr>
-                        @endforelse
-                    </table>
-                </div>
-                <div style="section">
-                    <table width="100%">
-                        <tr style="margin: 0px 100px">
-                            <td style="vertical-align: top; width: 9%; text-align: center; font-size: 11px;"></td>
-                            <td style="vertical-align: top; width: 27%; text-align: center; font-size: 11px;">
-                                <div style="text-align: center">
-                                    <img src="https://cdn.shopify.com/s/files/1/0825/2224/3394/files/qr-code-kazaar-slip.png?v=1753871823" alt="qrcode" width="50" />
+    @foreach ($chunks as $chunkIndex => $chunk)
+        <table style="width: 100%">
+            <tbody>
+                <tr>
+                    <td style="width: 50%; padding-right: 20px; vertical-align: top; position: relative">
+                        <div class="page-breakkkkk">
+                            <div class="main-header">
+                                <div class="section" style="margin-bottom: 10px">
+                                    <table width="100%">
+                                        <tr>
+                                            <td width="100%"
+                                                style="vertical-align: top; justify-content: center; outline: 1px solid #D5D5D5">
+                                                <p>Testwrite checking How many character are fitting in this BOX.
+                                                    I need this p ackaigng within the fastest possible way..... please majke sure its
+                                                    bla bla bla. Testwrite checking How many character are fitting in this BOX. I need
+                                                    this p ackaigng within the fastest possible way..... please majke sure its bla bla
+                                                    bla.Testwrite checking How many character are fitting in this BOX. I need this p
+                                                    ackaigng within the fastest possible way..... please majke sure its bla bla bla.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
-                                <p ><strong>200€ Gewinnen!</strong></p>
-                                <p>Lasse eine Bewertung da & gewinne 200€. Jede Woche wird ausgelost.</p>
-                            </td>
-                            <td style="vertical-align: top; width: 27%; text-align: center; font-size: 11px;">
-                                <div style="text-align: center">
-                                    <img src="https://cdn.shopify.com/s/files/1/0825/2224/3394/files/qr-code-kazaar-slip.png?v=1753871823" alt="qrcode" width="50" />
+                            </div>
+                            <div class="section">
+                                <table class="item-list" style="margin: 0px">
+                                    {{-- <tr>
+                                        <td></td>
+                                        <td class="bold">ARTIKEL</td>
+                                        <td class="bold">MENGE</td>
+                                    </tr> --}}
+                                    @forelse ($chunk as $item)
+                                        <tr>
+                                            <td style="width: 12%"><img src={{ $item['product']['image'] . '&width=50' ?? '' }} width="35px"
+                                                    alt="{{ $item['name'] ?? '' }}"></td>
+                                            <td style="widows: 74%;">
+                                                <div><strong>{{ $item['product']['product_name'] ?? '--' }}</strong></div> 
+                                                <div>{{ $item['varient']['title'] ?? '--' }}</div>
+                                                
+                                            </td>
+                                            <td style="width:14%;">
+                                                <div style="text-align: right;">
+                                                    <strong>{{ $item['quantity'] ?? '--' }} von {{ $item['quantity'] ?? '--' }}</strong>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    @empty
+                                        <tr>
+                                            <td colspan="2" class="text-center pd">
+                                                <h6>No Product Found !</h6>
+                                            </td>
+                                        </tr>
+                                    @endforelse
+                                </table>
+                            </div>
+                            <div class="main-footer" style="position: absolute; bottom: 20px">
+                                <div style="section">
+                                    <table width="100%">
+                                        <tr style="margin: 0px 100px">
+                                            <td style="vertical-align: top; width: 5%; text-align: center; font-size: 11px;"></td>
+                                            <td style="vertical-align: top; width: 30%; text-align: center; font-size: 11px;">
+                                                <div style="text-align: center">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0825/2224/3394/files/kazaar-qr-gewinnen.jpg?v=1753937169" alt="qrcode" width="50" />
+                                                </div>
+                                                <p ><strong>200€ Gewinnen!</strong></p>
+                                                <p>Lasse eine Bewertung da & gewinne 200€. Jede Woche wird ausgelost.</p>
+                                            </td>
+                                            <td style="vertical-align: top; width: 30%; text-align: center; font-size: 11px;">
+                                                <div style="text-align: center">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0825/2224/3394/files/kazaar-qr-exclusive-whatsapp.jpg?v=1753937235" alt="qrcode" width="50" />
+                                                </div>
+                                                <p ><strong>Exclusiver Whatsapp Club</strong></p>
+                                                <p>Kostenloser exklusiver Zugang. Insights vor allen anderen. Nur in unserem Kanal.</p>
+                                            </td>
+                                            <td style="vertical-align: top; width: 30%;text-align: center; font-size: 11px;">
+                                                <div style="text-align: center">
+                                                    <img src="https://cdn.shopify.com/s/files/1/0825/2224/3394/files/kazaar-qr-support.jpg?v=1753937295" alt="qrcode" width="50" />
+                                                </div>
+                                                <p><strong>Kundensupport</strong></p>
+                                                <p>Hast du ein Problem bei deiner Bestellung? Keine Panik, unser Support ist da.</p>
+                                            </td>
+                                            <td style="vertical-align: top; width: 5%; text-align: center; font-size: 11px;"></td>
+                                        </tr>
+                                    </table>
                                 </div>
-                                <p ><strong>Exclusiver Whatsapp Club</strong></p>
-                                <p>Kostenloser exklusiver Zugang. Insights vor allen anderen. Nur in unserem Kanal.</p>
-                            </td>
-                            <td style="vertical-align: top; width: 27%;text-align: center; font-size: 11px;">
-                                <div style="text-align: center">
-                                    <img src="https://cdn.shopify.com/s/files/1/0825/2224/3394/files/qr-code-kazaar-slip.png?v=1753871823" alt="qrcode" width="50" />
+                                <div class="footer" style="margin-top: 5px">
+                                    <p><strong>KAZAAR LLC</strong></p>
+                                    <p>254 Chapman Rd, Ste 208 #15427 Newark, Delaware 19702 USA</p>
+                                    <p><strong>info@kazaarfragrances.com / <a href="https://www.kazaarfragrances.com"
+                                                style="text-decoration: none; color:#000;">www.kazaarfragrances.com</a></strong></p>
                                 </div>
-                                <p><strong>Kundensupport</strong></p>
-                                <p>Hast du ein Problem bei deiner Bestellung? Keine Panik, unser Support ist da.</p>
-                            </td>
-                            <td style="vertical-align: top; width: 9%; text-align: center; font-size: 11px;"></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="footer">
-                    <p><strong>KAZAAR LLC</strong></p>
-                    <p>254 Chapman Rd, Ste 208 #15427 Newark, Delaware 19702 USA</p>
-                    <p><strong>info@kazaarfragrances.com / <a href="https://www.kazaarfragrances.com"
-                                style="text-decoration: none; color:#000;">www.kazaarfragrances.com</a></strong></p>
-                </div>
-            </td>
-            <td style="width: 50%; padding-left: 20px; vertical-align: top;">
-                <div class="section">
-                    <table width="100%">
-                        <tr>
-                            <td width="40%" style="vertical-align: top; justify-content: center">
-                                <img src="https://www.kazaarfragrances.com/cdn/shop/files/kazaar_schrift_in_schwarz.png?v=1679006536&width=100"
-                                    alt="kazaar">
-                                <div style="margin-top: 10px">Bestellung #405927<br><span>19 Apr 2025</span></div>
-                            </td>
-                            <td width="30%" style="vertical-align: top; justify-content: center">
-                                <p><strong>VERSAND AN</strong></p>
-                                <p>
-                                    Treede Janine<br>
-                                    Bahnhofstraße 3<br>
-                                    24960 Glücksburg<br>
-                                    Deutschland
-                                </p>
-                            </td>
-                            <td width="30%" style="vertical-align: top; text-align: right">
-                                <div style="text-align: left;">
-                                    <p><strong>RECHNUNG AN</strong></p>
-                                    <p>
-                                        Treede Janine<br>
-                                        Bahnhofstraße 3<br>
-                                        24960 Glücksburg<br>
-                                        Deutschland
-                                    </p>
+                            </div>
+                        </div>
+                    </td>
+                        @if($chunkIndex == 0)
+                            <td style="width: 50%; padding-left: 20px; vertical-align: top;">
+                        @else
+                            <td style="width: 50%; padding-left: 20px; vertical-align: top; height: 21cm">  
+                        @endif
+                                <div class="section">
+                                    <table width="100%">
+                                        <tr>
+                                            <td width="40%" style="vertical-align: top; justify-content: center">
+                                                <img src="https://www.kazaarfragrances.com/cdn/shop/files/kazaar_schrift_in_schwarz.png?v=1679006536&width=100"
+                                                    alt="kazaar">
+                                                <div style="margin-top: 5px"><strong>Bestellung #405927</strong><br><span>19 Apr 2025</span></div>
+                                                <div style="margin-top: 5px">
+                                                    <table>
+                                                        <tr>
+                                                            <td><strong>🟢 First-Time Buyer (1)</strong></td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div>
+                                                    <table>
+                                                        <tr>
+                                                            <td><strong>📦 Packaging size: Large</strong></td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                            <td width="30%" style="vertical-align: top; justify-content: center">
+                                                <div style="text-align: left; float: center">
+                                                    <p><strong>VERSAND AN</strong></p>
+                                                    <p>
+                                                        Treede Janine<br>
+                                                        Bahnhofstraße 3<br>
+                                                        24960 Glücksburg<br>
+                                                        Deutschland
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td width="30%" style="vertical-align: top; text-align: right">
+                                                <div style="text-align: left; float: right">
+                                                    <p><strong>RECHNUNG AN</strong></p>
+                                                    <p>
+                                                        Treede Janine<br>
+                                                        Bahnhofstraße 3<br>
+                                                        24960 Glücksburg<br>
+                                                        Deutschland
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="section" style="text-align: right">
-                    <img src="https://placehold.co/377X566?text=HEPHAISTOS" alt="slip sticker2" style="width: 10cm; height: 15cm" />
-                </div>
-            </td>
-        </tr>
-    </table>
+                                @if($chunkIndex == 0)
+                                <div class="section" style="text-align: right">
+                                    <img src="https://cdn.shopify.com/s/files/1/0825/2224/3394/files/label-sticker.jpg?v=1753940474" alt="slip sticker" style="width: 10cm; height: 15cm;" />
+                                </div>
+                                @endif
+                        </td>
+                </tr>
+            </tbody>
+        </table>
+    
+    @endforeach
 
 </body>
 
