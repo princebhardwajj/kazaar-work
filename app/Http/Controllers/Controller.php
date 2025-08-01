@@ -14,7 +14,15 @@ class Controller extends BaseController
     public function generatePdf()
     {
         $data = []; // Add any data you want to pass to the view if needed
-        $pdf = Pdf::loadView('view-pdf', $data)->setPaper('a4', 'landscape')->setOptions(['isHtml5ParserEnabled' => true,'isRemoteEnabled' => true]);
-        return $pdf->download('catalog.pdf');
+        $pdf = Pdf::setOption(
+            [
+                // 'isHtml5ParserEnabled' => true,
+                'fontDir' => public_path('storage/fonts'),
+                'fontCache' => public_path('storage/fonts'),
+                'defaultFont' => 'serif',
+                'isRemoteEnabled' => true
+            ]
+        )->loadView('view-pdf', $data)->setPaper('a4', 'landscape');
+        return $pdf->stream('catalog.pdf');
     }
 }
